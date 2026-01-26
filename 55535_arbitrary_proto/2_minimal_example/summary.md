@@ -21,8 +21,7 @@ What needs to be verified is that generated files are importable by Serve deploy
 │   ├── dependency.proto
 │   ├── dependency_pb2.py
 │   └── dependency_pb2_grpc.py
-├── serve/
-│   └── ray_app.py           → Ray Serve deployment
+├── ray_app.py               → Ray Serve deployment
 ├── root_client.py
 ```
 

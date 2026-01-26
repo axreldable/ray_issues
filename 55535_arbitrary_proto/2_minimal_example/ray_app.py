@@ -2,13 +2,6 @@
 Ray Serve gRPC server using nested proto structure.
 This demonstrates that Ray Serve works with cross-directory proto dependencies.
 """
-import sys
-from pathlib import Path
-
-# Add parent directory to path so we can import from proto_1 and proto_2
-sys.path.insert(0, str(Path(__file__).parent.parent))
-# Alternatively, add path to the folder to PYTHONPATH: `export PYTHONPATH=/path/to/proto/root:$PYTHONPATH`
-
 from proto_1 import greet_pb2
 
 from ray import serve
