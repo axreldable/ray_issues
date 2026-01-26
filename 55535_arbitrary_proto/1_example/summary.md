@@ -37,7 +37,7 @@
 ### Test Output
 
 ```
-(ray_issues) KVX2T36PFH:55535_arbitrary_proto astarikov$ python root_client.py
+bash$ python root_client.py
 Status code: StatusCode.OK
 Response: Hello from Ray, Alice! Your email is alice@example.com
 Status code: StatusCode.OK
@@ -45,7 +45,7 @@ Response: Hello from root Server, Alice! Your email is alice@example.com
 Status code: StatusCode.OK
 Response: Hello from nested Server, Alice! Your email is alice@example.com
 --
-(ray_issues) KVX2T36PFH:55535_arbitrary_proto astarikov$ python client/app_client.py
+bash$ python client/app_client.py
 Status code: StatusCode.OK
 Response: Hello from Ray, Alice! Your email is alice@example.com
 Status code: StatusCode.OK

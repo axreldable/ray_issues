@@ -7,6 +7,7 @@ from pathlib import Path
 
 # Add parent directory to path so we can import from proto_1 and proto_2
 sys.path.insert(0, str(Path(__file__).parent.parent))
+# Alternatively, add path to the folder to PYTHONPATH: `export PYTHONPATH=/path/to/proto/root:$PYTHONPATH`
 
 from proto_1 import greet_pb2, greet_pb2_grpc
 from proto_2 import dependency_pb2

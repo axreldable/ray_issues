@@ -17,20 +17,8 @@ ray_serve_run:
 		--grpc-servicer-functions proto_1.greet_pb2_grpc.add_GreeterServicer_to_server
 	cd serve && serve run ray_app:app
 
-
-grpc_root_run:
-	python root_server.py
-
-
-grpc_nested_run:
-	python serve/grpc_server.py
-
-
 run_root_client:
 	python root_client.py
-
-run_nested_client:
-	python client/app_client.py
 
 clean:
 	ray stop
