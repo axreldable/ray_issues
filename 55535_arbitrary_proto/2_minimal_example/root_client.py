@@ -34,3 +34,4 @@ def check(port: int):
 
 if __name__ == "__main__":
     check(9000)
+    check(50051)

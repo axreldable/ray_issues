@@ -22,6 +22,7 @@ What needs to be verified is that generated files are importable by Serve deploy
 │   ├── dependency_pb2.py
 │   └── dependency_pb2_grpc.py
 ├── ray_app.py               → Ray Serve deployment
+├── root_server.py           → Regular grpc server
 ├── root_client.py
 ```
 
@@ -32,4 +33,5 @@ What needs to be verified is that generated files are importable by Serve deploy
 ```
 bash$ python root_client.py
 Response: Hello from Ray, Alice! Your email is alice@example.com
+Response: Hello from root Server, Alice! Your email is alice@example.com
 ```
