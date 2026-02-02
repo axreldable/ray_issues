@@ -2,7 +2,8 @@ import requests
 
 count = 0
 english_text = "Hello world!"
-url = "http://127.0.0.1:8000/hello-world-1"
+# url = "http://127.0.0.1:8000/hello-world-1"
+url = "http://127.0.0.1:8000/worker_app"
 
 def call():
     global count
@@ -13,5 +14,5 @@ def call():
     print(f"{count}: {french_text}")
 
 if __name__ == '__main__':
-    for i in range(1000):
+    for i in range(10):
         call()
