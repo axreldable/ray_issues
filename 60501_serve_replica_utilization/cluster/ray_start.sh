@@ -17,7 +17,7 @@ HOST="http://localhost"
 
 # === START RAY ===
 echo "🟢 Starting Ray..." | tee -a "$RAY_LOG"
-ray start --head > "$RAY_LOG" 2>&1
+ray start --num-cpus 8 --head > "$RAY_LOG" 2>&1
 if [ ${PIPESTATUS[0]} -ne 0 ]; then
   echo "❌ Ray start failed. See error below:" | tee -a "$RAY_LOG"
   echo "🔻 Last 20 lines of $RAY_LOG:"

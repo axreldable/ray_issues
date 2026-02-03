@@ -15,6 +15,12 @@ run:
 client:
 	curl http://localhost:8000/hello-world-1
 	curl http://localhost:8000/worker_app
+	curl "http://localhost:8000/?duration=2.0"
+	curl -X POST http://localhost:8000/ \
+		-H "Content-Type: application/json" \
+		-d '{"duration": 2.0}'
+
+
 
 
 debug:
